@@ -8,19 +8,15 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 0px;
         }
-
         h1 {
             font-size: 72px;
             margin-bottom: 0px;
         }
-
         h2 {
             font-size: 24px;
             margin-top: 0;
         }
-
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -29,7 +25,6 @@
             max-width: 1000px;
             margin: auto;
         }
-
         .student-card {
             border: 3px solid black;
             padding: 10px;
@@ -38,19 +33,16 @@
             background: #f9f9f9;
             border-radius: 8px;
         }
-
         .student-card img {
             width: 80px;
             height: 80px;
             border-radius: 50%;
             margin-right: 10px;
         }
-
         .student-info {
             font-size: 12px;
             text-align: left;
         }
-    </style>
     </style>
 </head>
 <body onload="loadData()">
@@ -58,120 +50,37 @@
     <h2>Library Users</h2>
     <div id="students" class="grid-container"></div>
 
-    <xml id="xmldata" style="display: none;">
-        <students>
-            <student>
-                <name>Oliver Bennett</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://i1.sndcdn.com/artworks-7f4FdbsmL4sCQuc7-0xDswA-t500x500.jpg</photo>
-            </student>
-            <student>
-                <name>Sophia Ramirez</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8s0Ivn19bjkFhaOXM5h9FpRpr3pds9A1-_A&s</photo>
-            </student>
-            <student>
-                <name>Hiroshi Takahashi</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://i.pinimg.com/736x/b2/da/f9/b2daf9019c4b08fa3a90c7d28a08a059.jpg</photo>
-            </student>
-            <student>
-                <name>Zara Patel</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMaoG6CpDKyB-0G50-bWve3dxiHylV-TZ1pg&s</photo>
-            </student>
-            <student>
-                <name>Elias Johnson</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://storage.ensigame.com/logos/players/a7a3e8b413018d23fe820e33d9704fdc.png</photo>
-            </student>
-            <student>
-                <name>Amara Okafor</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes</adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://static.gosugamers.net/95/74/80/17a25d754234676697657a83ffd0530123ff01d43fc620a74dbff15d80.png</photo>
-            </student>
-            <student>
-                <name>Matteo Rossi</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://i.pinimg.com/736x/59/60/9d/59609da0233f0f024b4d7552c853f046.jpg</photo>
-            </student>
-            <student>
-                <name>Linh Nguyen</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://img.freepik.com/free-psd/close-up-kid-expression-portrait_23-2150193262.jpg</photo>
-            </student>
-            <student>
-                <name>John Doe</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://i.pinimg.com/736x/55/3a/60/553a602450aaf116215f5aa0fe8f88c6.jpg</photo>
-            </student>
-            <student>
-                <name>Emilio Garcia</name>
-                <course>BSIT</course>
-                <year_section>3BG2</year_section>
-                <adviser>Engr. Noemi P. Reyes </adviser>
-                <school_year>2025-2026</school_year>
-                <photo>https://i.pinimg.com/736x/a2/27/25/a22725aed8f8ef9a3cdf43720605c6e1.jpg</photo>
-            </student>
-        </students>
-    </xml>
-
     <script>
         function loadData() {
-            const xml = document.getElementById('xmldata');
-            const students = xml.getElementsByTagName('student');
-            let output = '';
-
-            for (let i = 0; i < students.length; i++) {
-                const name = students[i].getElementsByTagName('name')[0].textContent;
-                const course = students[i].getElementsByTagName('course')[0].textContent;
-                const year_section = students[i].getElementsByTagName('year_section')[0].textContent;
-                const adviser = students[i].getElementsByTagName('adviser')[0].textContent;
-                const school_year = students[i].getElementsByTagName('school_year')[0].textContent;
-                const photo = students[i].getElementsByTagName('photo')[0].textContent;
-
-                output += `
-                    <div class="student-card">
-                        <img src="${photo}" alt="Student Image">
-                        <div class="student-info">
-                            <p><b>Name:</b> ${name}</p>
-                            <p><b>Course:</b> ${course}</p>
-                            <p><b>Year Level / Section:</b> ${year_section}</p>
-                            <p><b>Adviser:</b> ${adviser}</p>
-                            <p><b>School Year:</b> ${school_year}</p>
-                        </div>
-                    </div>
-                `;
-            }
-
-            document.getElementById('students').innerHTML = output;
+            fetch('students.xml')
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                    const students = data.getElementsByTagName('student');
+                    let output = '';
+                    for (let i = 0; i < students.length; i++) {
+                        const name = students[i].getElementsByTagName('name')[0].textContent;
+                        const course = students[i].getElementsByTagName('course')[0].textContent;
+                        const year_section = students[i].getElementsByTagName('year_section')[0].textContent;
+                        const adviser = students[i].getElementsByTagName('adviser')[0].textContent;
+                        const school_year = students[i].getElementsByTagName('school_year')[0].textContent;
+                        const photo = students[i].getElementsByTagName('photo')[0].textContent;
+                        output += `
+                            <div class="student-card">
+                                <img src="${photo}" alt="Student Image">
+                                <div class="student-info">
+                                    <p><b>Name:</b> ${name}</p>
+                                    <p><b>Course:</b> ${course}</p>
+                                    <p><b>Year Level / Section:</b> ${year_section}</p>
+                                    <p><b>Adviser:</b> ${adviser}</p>
+                                    <p><b>School Year:</b> ${school_year}</p>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    document.getElementById('students').innerHTML = output;
+                })
+                .catch(error => console.error('Error loading XML data:', error));
         }
     </script>
 </body>
