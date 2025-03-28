@@ -52,7 +52,7 @@
 
     <script>
         function loadData() {
-            fetch('students.xml')
+            fetch('Students.xml')
                 .then(response => response.text())
                 .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
                 .then(data => {
