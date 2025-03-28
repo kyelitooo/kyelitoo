@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Oliver Bennett</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://i1.sndcdn.com/artworks-7f4FdbsmL4sCQuc7-0xDswA-t500x500.jpg</photo>
+    </student>
+    <student>
+        <name>Sophia Ramirez</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8s0Ivn19bjkFhaOXM5h9FpRpr3pds9A1-_A&amp;s</photo>
+    </student>
+    <student>
+        <name>Hiroshi Takahashi</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://i.pinimg.com/736x/b2/da/f9/b2daf9019c4b08fa3a90c7d28a08a059.jpg</photo>
+    </student>
+    <student>
+        <name>Zara Patel</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMaoG6CpDKyB-0G50-bWve3dxiHylV-TZ1pg&amp;s</photo>
+    </student>
+    <student>
+        <name>Elias Johnson</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://storage.ensigame.com/logos/players/a7a3e8b413018d23fe820e33d9704fdc.png</photo>
+    </student>
+    <student>
+        <name>Amara Okafor</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://static.gosugamers.net/95/74/80/17a25d754234676697657a83ffd0530123ff01d43fc620a74dbff15d80.png</photo>
+    </student>
+    <student>
+        <name>Matteo Rossi</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://i.pinimg.com/736x/59/60/9d/59609da0233f0f024b4d7552c853f046.jpg</photo>
+    </student>
+    <student>
+        <name>Linh Nguyen</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://img.freepik.com/free-psd/close-up-kid-expression-portrait_23-2150193262.jpg</photo>
+    </student>
+    <student>
+        <name>John Doe</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://i.pinimg.com/736x/55/3a/60/553a602450aaf116215f5aa0fe8f88c6.jpg</photo>
+    </student>
+    <student>
+        <name>Emilio Garcia</name>
+        <course>BSIT</course>
+        <year_section>3BG2</year_section>
+        <adviser>Engr. Noemi P. Reyes</adviser>
+        <school_year>2025-2026</school_year>
+        <photo>https://i.pinimg.com/736x/a2/27/25/a22725aed8f8ef9a3cdf43720605c6e1.jpg</photo>
+    </student>
+</students>
